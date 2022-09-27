@@ -7,32 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" name="zeneszam" id="zeneszam" placeholder="Zene címe">
-    <input type="number" id="zeneHossz" placeholder="Zene hossza">
-    <table align="center">
+    <table>
         <tr>
             <th>Cím</th>
             <th>Hossz</th>
         </tr>
         <tr>
-            <td id="zeneszam"></td>
-            <td id="zeneHossz"></td>
+            <td>
+                <input type="text" name="song" id="song" placeholder="Zene címe">
+            </td>
+            <td>
+                <input type="number" name="length" id="length" placeholder="Zene hossza ">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <output id="sum">Össz. hosszúság: </output>
+            </td>
         </tr>
     </table>
-
-    <button id="hozzaad">Hozzáad</button>
+         <button id="add" value="submit">Hozzáad</button>
     <style>
+        table{
+            text-align: center;
+            margin: auto;
+        }
         button{
             margin: auto;
             display: block;
-            margin-top: 20px;
         }
-        input{
-            margin: auto;
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 15px;
+        body{
+            background-color: aqua;
         }
+       td{
+        text-align: center;
+       }
     </style>
     <script src="index.js"></script>
 </body>
